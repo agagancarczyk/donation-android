@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuEditDetails"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/edit"               
+        android:title="@string/menuEditDetails"/>
+
+    <item
+        android:id="@+id/menuReport"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/report"               
+        android:title="@string/menuReport"/>    
+    
+      <item
+        android:id="@+id/menuLogout"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/logout"       
+        android:title="@string/menuLogout"/>        
+    
+</menu>

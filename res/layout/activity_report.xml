@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/appLayoutTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22"
+        android:padding="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:background="@color/lightBlueColor"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                tools:ignore="UselessLeaf" >
+
+                <TextView
+                    android:id="@+id/reportInfoBarTextView"
+                    style="@style/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/reportInfoLbl" />
+
+                <TextView
+                    android:id="@+id/selectCandText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectCandText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/blueColor" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/selectCandidate"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/candidate" />
+
+                    <Button
+                        android:id="@+id/applyFilter"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/BlueColor"
+                        android:onClick="applyFilterButtonPressed"
+                        android:text="@string/applyFilterText"
+                        android:textColor="@color/whiteColor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf" >
+
+                <TextView
+                    android:id="@+id/resultListTextView"
+                    style="@style/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/resultListTextView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    
+                    android:orientation="vertical"
+                    tools:ignore="UselessLeaf" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+                        
+
+                        <ListView
+                            android:id="@+id/reportList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </ListView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        style="@style/footer"
+        android:layout_width="match_parent"
+        android:background="@color/darkBlueColor" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dip"
+            android:text="@string/appWebsite"
+            android:textColor="@color/greycolor"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

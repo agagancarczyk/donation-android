@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/appLayoutTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/createTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlueColor"
+        android:paddingBottom="10dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:text="@string/createTitle"
+        android:textColor="@color/blueColor"
+        android:textSize="10pt" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/candidateDetailsBarTextView"
+                    style="@style/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/candidateDetailsLbl" />
+
+                <TextView
+                    android:id="@+id/candFirstNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/candFirstNameLbl"
+                    android:textColor="@color/blueColor"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/candFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/candFirstName"
+                    android:inputType="textPersonName" 
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:id="@+id/candLastNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/candLastNameLbl"
+                    android:textColor="@color/blueColor"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/candLastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/candLastName"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="20dp" />
+
+                <TextView
+                    android:id="@+id/candOfficeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/candOfficeLbl"
+                    android:textColor="@color/blueColor"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/candOffice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/candOffice"
+                    android:inputType="textShortMessage"
+                    android:paddingBottom="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/BlueColor"
+                    android:onClick="signinPressed"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/loginSignin"
+                    android:textColor="@color/whiteColor" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        style="@style/footer"
+        android:layout_width="match_parent"
+        android:background="@color/darkBlueColor" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dip"
+            android:text="@string/appWebsite"
+            android:textColor="@color/greycolor"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

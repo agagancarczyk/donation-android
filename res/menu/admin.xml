@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuCreate"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/create"
+        android:title="@string/menuCreate"/> 
+        
+     <item
+        android:id="@+id/menuLogout"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/logout"        
+        android:title="@string/menuLogout"/>       
+    
+</menu>

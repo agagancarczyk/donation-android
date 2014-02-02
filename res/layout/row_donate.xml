@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    style="@style/appLayoutTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="8dp" >
+    
+
+    <TextView
+        android:id="@+id/row_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/row_method"
+        android:textColor="@color/whiteColor"
+        android:text="@string/defaultAmount" />
+
+    <TextView
+        android:id="@+id/row_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_amount"
+        android:layout_alignBottom="@+id/row_amount"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/whiteColor"
+        android:text="@string/defaultMethod" />
+
+    <TextView
+        android:id="@+id/row_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_amount"
+        android:layout_alignBottom="@+id/row_amount"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/row_amount"
+        android:textColor="@color/whiteColor"
+        android:text="@string/defaultOffice" />
+
+    <TextView
+        android:id="@+id/row_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_office"
+        android:layout_alignBottom="@+id/row_office"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/row_office"
+        android:textColor="@color/whiteColor"
+        android:text="@string/defaultLastName" />
+
+    <TextView
+        android:id="@+id/row_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/row_lastName"
+        android:layout_alignBottom="@+id/row_lastName"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/row_lastName"
+        android:textColor="@color/whiteColor"
+        android:text="@string/defaultFirstName" />
+
+</RelativeLayout>

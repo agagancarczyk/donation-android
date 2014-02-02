@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <!-- Background Colours -->
+
+    <color name="darkBlueColor">#A3CCCC</color>
+    <color name="navyColor">#004C66</color> 
+    <color name="BlueColor">#2DA3B5</color>
+    <color name="blueColor">#005c7a</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="greyColor">#333333</color>
+    <color name="lightBlueColor">#D5ECF2</color>
+    <color name="verylightBlueColor">#39b3d7</color>
+    
+    <!-- Font Colours -->
+    <color name="babyBlueColor">#B0C4DE</color>
+    <color name="lightBabyBlueColor">#11545C</color>
+    <color name="greycolor">#777</color>
+  </resources>
+
